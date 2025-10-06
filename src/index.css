@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /* 🆕 for the headline */
+
+
+@import "tailwindcss";
+
+/* Design System - Story-driven Portfolio */
+
+@layer base {
+  :root {
+    /* Brand Colors (HSL) */
+    --cream: 41 100% 96%;
+    --off-white: 40 20% 97%;
+    --orange-gold: 38 94% 50%;
+    --charcoal: 218 33% 17%;
+    --soft-accent: 199 89% 48%;
+
+    /* 🆕 Final-look palette helpers */
+    --navy: 219 39% 12%;
+    --surface: 0 0% 100%;
+    --teal-pill: 188 66% 85%;
+    --teal-pill-fg: 188 60% 22%;
+
+    /* Semantic Tokens */
+    --background: var(--cream);
+    --foreground: var(--charcoal);
+    
+    --primary: var(--orange-gold);
+    --primary-foreground: var(--cream);
+    
+    --secondary: var(--charcoal);
+    --secondary-foreground: var(--cream);
+    
+    --accent: var(--soft-accent);
+    --accent-foreground: var(--cream);
+    
+    --muted: var(--off-white);
+    --muted-foreground: var(--charcoal);
+    
+    --card: var(--surface);               /* 🔁 brighter white cards */
+    --card-foreground: var(--charcoal);
+    
+    --border: 40 10% 85%;
+    --input: 40 10% 85%;
+    --ring: var(--orange-gold);
+    
+    --radius: 1rem;                       /* 🔁 larger corner radius */
+
+    /* Typography */
+    --font-inter: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 8px rgba(31, 41, 55, 0.08);
+    --shadow-md: 0 6px 16px rgba(31, 41, 55, 0.12);    /* 🔁 richer */
+    --shadow-lg: 0 10px 28px rgba(31, 41, 55, 0.16);
+    --shadow-glow: 0 0 40px rgba(245, 158, 11, 0.25);
+    --shadow-card: 0 10px 24px rgba(16, 24, 40, 0.12); /* 🆕 soft card */
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border)); /* v4-safe */
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: var(--font-inter);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+
+  h1 { @apply text-5xl md:text-7xl; }
+  h2 { @apply text-4xl md:text-6xl; }
+  h3 { @apply text-3xl md:text-4xl; }
+
+  html { scroll-behavior: smooth; }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* ===========================
+     Section titles spacing
+     =========================== */
+  .section-title {                    /* (already added earlier) */
+    margin-top: clamp(1.25rem, 4vw, 3rem);
+  }
+
+  /* ===========================
+     Buttons
+     =========================== */
+  .btn-primary {
+    background-color: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+    @apply px-8 py-4 rounded-full font-semibold;
+    @apply transition-all duration-300;
+  }
+  .btn-primary:hover { box-shadow: var(--shadow-glow); }
+  .btn-primary:active { transform: scale(0.95); }
+
+  .btn-secondary {
+    background-color: hsl(var(--secondary));
+    color: hsl(var(--secondary-foreground));
+    @apply px-8 py-4 rounded-full font-semibold;
+    @apply transition-all duration-300;
+  }
+  .btn-secondary:hover { background-color: hsl(var(--secondary) / 0.9); }
+  .btn-secondary:active { transform: scale(0.95); }
+
+  .btn-ghost {
+    color: hsl(var(--foreground));
+    @apply px-8 py-4 rounded-full font-semibold border-2;
+    border-color: hsl(var(--foreground));
+    @apply transition-all duration-300;
+  }
+  .btn-ghost:hover {
+    background-color: hsl(var(--foreground));
+    color: hsl(var(--background));
+  }
+  .btn-ghost:active { transform: scale(0.95); }
+
+  /* ===========================
+     Cards (Final)
+     =========================== */
+  .card {
+    background-color: hsl(var(--card));
+    border-radius: 1.125rem;
+    padding: 2rem;
+    box-shadow: var(--shadow-card);
+    border: 1px solid hsl(var(--border));
+    transition: var(--transition-smooth);
+  }
+  .card:hover { box-shadow: var(--shadow-lg); }
+
+  /* ===========================
+     Certifications pill badges
+     =========================== */
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    height: 2.25rem;
+    padding: 0 1rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    border: 1px solid transparent;
+    transition: var(--transition-smooth);
+  }
+  .pill--teal {
+    background-color: hsl(var(--teal-pill));
+    color: hsl(var(--teal-pill-fg));
+  }
+  .pill--teal:hover {
+    filter: brightness(0.98);
+    box-shadow: 0 10px 24px hsla(188, 60%, 22%, 0.28); /* 🆕 add shadow on hover */
+    transform: translateY(-2px);                       /* 🆕 slight lift */
+  }
+
+  .chip--gold {
+    background-color: hsl(var(--primary) / 0.18);
+    color: hsl(var(--primary));
+    border-radius: 9999px;
+    padding: 0.25rem 0.75rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    border: 1px solid hsl(var(--primary) / 0.35);
+  }
+  .chip--grey {
+    background-color: hsla(220, 9%, 46%, 0.15);
+    color: hsl(220 9% 26%);
+    border-radius: 9999px;
+    padding: 0.25rem 0.75rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    border: 1px solid hsla(220, 9%, 46%, 0.25);
+  }
+
+  /* ===========================
+     Skills tabs + tiles
+     =========================== */
+  .tabs {
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .tab {
+    position: relative;
+    height: 2.25rem;
+    padding: 0 0.9rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    color: hsl(var(--foreground) / 0.7);
+    transition: var(--transition-smooth);
+  }
+  .tab:hover { color: hsl(var(--foreground)); }
+  .tab--active { color: hsl(var(--primary)); }
+  .tab--active::before {
+    content: "";
+    position: absolute;
+    inset: -12px -16px;
+    background: radial-gradient(
+      circle at 50% 50%,
+      hsl(var(--primary) / 0.18) 0%,
+      hsl(var(--primary) / 0.08) 40%,
+      transparent 65%
+    );
+    z-index: -1;
+    filter: blur(2px);
+    border-radius: 9999px;
+    pointer-events: none;
+  }
+
+  .skill-card {
+    background-color: hsl(var(--surface));
+    border-radius: 1rem;
+    padding: 1rem;
+    border: 1px solid hsl(var(--border));
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-smooth);
+  }
+  .skill-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+  }
+  .skill-card__icon {
+    color: hsl(var(--primary));
+  }
+
+  /* ===========================
+     Contact (Final dark section)
+     =========================== */
+  #contact {
+    background-color: hsl(var(--navy));
+    color: hsl(var(--surface));
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  #contact input, #contact textarea {
+    background-color: hsla(0, 0%, 100%, 0.06);
+    color: hsl(var(--surface));
+    border-color: hsla(0, 0%, 100%, 0.12);
+  }
+  #contact .btn-primary {
+    width: 100%;
+    max-width: 28rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 3rem;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    background-color: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+    box-shadow: none;
+  }
+  #contact .btn-primary:hover { box-shadow: var(--shadow-glow); }
+
+  .social-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 9999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsla(0, 0%, 100%, 0.06);
+    border: 1px solid hsla(0, 0%, 100%, 0.12);
+    color: hsl(var(--surface));
+    transition: var(--transition-smooth);
+  }
+  .social-btn:hover {
+    background-color: hsla(0, 0%, 100%, 0.12);
+    transform: translateY(-2px);
+  }
+}
+
+/* Duplicate base block with token @apply was previously removed (v4-safe). */
