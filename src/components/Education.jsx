@@ -308,9 +308,10 @@ const educationData = [
 
 /* 🆕 add certification links (replace '#' with your actual credential URLs) */
 const certifications = [
-  { label: "OCI 2025 AI Foundations Associate", url: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=A2317259342B7C3526E892488CE67DC1BE7FCC202F999FDCE0844F66520773B2" },           /* 🆕 */
+  { label: "OCI 2025 AI Foundations Associate", url: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=A2317259342B7C3526E892488CE67DC1BE7FCC202F999FDCE0844F66520773B2" },
+  { label: "OCI 2025 Certified DevOps Professional", url: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=8C998AA0B9148452F13059EEE13EC7A3421F576405C04163E3D990F75D4DD335" },            /* 🆕 */
   { label: "OCI 2025 Generative AI Professional", url: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=8D2E5EDB524E497DF5EA0AE6E250AEB0112146D41215CE49021472451C3BC8E3" },     /* 🆕 */
-  { label: "OCI 2025 Certified DevOps Professional", url: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=8C998AA0B9148452F13059EEE13EC7A3421F576405C04163E3D990F75D4DD335" },     /* 🆕 */
+      /* 🆕 */
 ];
 
 const Education = () => {
