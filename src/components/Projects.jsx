@@ -249,7 +249,7 @@ const projectsData = [
     description: "A full-fledged Uber-like ride booking application built with the MERN stack, featuring real-time ride updates with Socket.IO and Google Maps integration for location search and live tracking.",
     images: ["/project_screenshots/Home.png", "/project_screenshots/Home.png"],
     tags: ["Microservices", "Real-time", "Google Maps API", "Socket.IO"],
-    url: "#",
+    url: "https://github.com/Sarg3n7/Uber-Clone",
   },
   {
     name: "AI Powered Interview Assistant",
@@ -258,7 +258,7 @@ const projectsData = [
       "Conversational mock interviews powered by Gemini with role-specific question sets, timed sessions, AI feedback, and scoring. Includes answer history and progress tracking in a clean Ant Design UI.",
     images: ["/project_screenshots/AI Powered Interview.png", "/project_screenshots/AI Powered Interview.png"],
     tags: ["Generative AI", "Interview Prep", "LLM", "Web App"],
-    url: "#",
+    url: "https://github.com/Sarg3n7/AI-Powered-Interview-Assitant",
   },
   {
     name: "Virtual AI Assistant",
@@ -266,7 +266,7 @@ const projectsData = [
     description: "An AI-powered virtual assistant built with MERN and Google Gemini AI. It can listen to your voice, respond with speech (US accent), search on Google & YouTube, open apps like Instagram/Facebook, show weather, answer general questions, and more.",
     images: ["/project_screenshots/Virtual-Assistant.png", "/project_screenshots/Virtual-Assistant-2.png"],
     tags: ["AI Integration", "Voice Recognition", "JWT", "Real-time"],
-    url: "#",
+    url: "https://github.com/Sarg3n7/Virtual-AI-Assistant",
   },
 ];
 
