@@ -96,14 +96,16 @@ const Hero = () => {
         {/* 🆕 2-column layout: GIF left, text right */}
         <div className="grid grid-cols-1 md:grid-cols-[320px_1fr] lg:grid-cols-[380px_1fr] items-center gap-10">
           {/* GIF (left) */}
-          <div className="mx-auto md:mx-0">
-            <div className="relative overflow-hidden rounded-full ring-4 ring-[hsl(var(--primary))/0.2] shadow-lg w-64 h-64 ml-10 md:w-80 md:h-80">
+
+
+          <div className="mx-auto md:mx-0 order-first md:order-none mb-8 md:mb-0 mt-8 md:mt-12">
+            <div className="relative overflow-hidden rounded-full ring-4 ring-[hsl(var(--primary))/0.2] shadow-lg w-48 h-48 sm:w-56 sm:h-56 md:w-80 md:h-80 md:ml-10 mx-auto">
               {/* Place your green-screen GIF at /public/hero/cat.gif */}
               <img
                 src="/gifs/dev.gif"           /* 🆕 ensure file exists at public/hero/cat.gif */
                 alt="typing cat"
                 className="
-                  w-full  object-contain
+                  w-full h-full object-cover
                   mix-blend-multiply
                   saturate-150 contrast-110
                 "
