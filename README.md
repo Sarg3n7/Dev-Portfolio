@@ -2,7 +2,7 @@
 
 # ⚡ Shashwat Shivam — Portfolio
 
-<a href="https://dev-portfolio-tawny-zeta.vercel.app/" target="_blank">
+<a href="https://shashwat-shivam-devportfolio.vercel.app/" target="_blank">
   <img src="https://img.shields.io/badge/Live%20Demo-Click%20Here-success?style=for-the-badge" alt="Live Demo" />
 </a>
 
@@ -162,7 +162,7 @@ npm run preview
 
 ## 🔗 Live Demo
 
-- 🌐 Live: **https://dev-portfolio-tawny-zeta.vercel.app/**
+- 🌐 Live: **https://shashwat-shivam-devportfolio.vercel.app/**
 
 ---
 
