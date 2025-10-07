@@ -246,7 +246,7 @@ const projectsData = [
   {
     name: "Ride Booking Platform",
     tech: ["React", "Node.js", "Express", "MongoDB", "Microservices"],
-    description: "JWT auth, faster response, scalable architecture",
+    description: "A full-fledged Uber-like ride booking application built with the MERN stack, featuring real-time ride updates with Socket.IO and Google Maps integration for location search and live tracking.",
     images: ["/project_screenshots/Home.png", "/project_screenshots/Home.png"],
     tags: ["Microservices", "Real-time", "Google Maps API", "Socket.IO"],
     url: "#",
@@ -263,7 +263,7 @@ const projectsData = [
   {
     name: "Virtual AI Assistant",
     tech: ["MERN", "Microservices", "Cloudinary", "Google Gemini AI"],
-    description: "Real-time voice assistant with low latency",
+    description: "An AI-powered virtual assistant built with MERN and Google Gemini AI. It can listen to your voice, respond with speech (US accent), search on Google & YouTube, open apps like Instagram/Facebook, show weather, answer general questions, and more.",
     images: ["/project_screenshots/Virtual-Assistant.png", "/project_screenshots/Virtual-Assistant-2.png"],
     tags: ["AI Integration", "Voice Recognition", "JWT", "Real-time"],
     url: "#",

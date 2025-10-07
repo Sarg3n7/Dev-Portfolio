@@ -76,7 +76,7 @@ const About = () => {
     <div className="section-container" id="about"> {/* 🆕 id for anchors */}
       <h2 className="section-title text-center mb-4">About</h2> {/* 🆕 spacing above title */}
       <p className="text-center text-xl text-[hsl(var(--muted-foreground))] mb-16"> {/* 🔁 token-safe */}
-        From Ranchi to real-world systems.
+        From ideas to intelligent systems
       </p>
 
       <div className="max-w-4xl mx-auto">
