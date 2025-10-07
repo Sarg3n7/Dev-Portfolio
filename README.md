@@ -2,6 +2,12 @@
 
 # ⚡ Shashwat Shivam — Portfolio
 
+<a href="https://dev-portfolio-one-alpha.vercel.app/" target="_blank">
+  <img src="https://img.shields.io/badge/Live%20Demo-Click%20Here-success?style=for-the-badge" alt="Live Demo" />
+</a>
+
+<br/><br/>
+
 [![Vite](https://img.shields.io/badge/Vite-5.4-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 [![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=121212)](https://react.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.0-38B2AC?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
@@ -151,6 +157,12 @@ npm run build
 npm run preview
 ```
 </details>
+
+---
+
+## 🔗 Live Demo
+
+- 🌐 Live: **https://dev-portfolio-one-alpha.vercel.app/**
 
 ---
 
