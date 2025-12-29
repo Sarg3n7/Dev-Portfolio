@@ -244,6 +244,14 @@ gsap.registerPlugin(ScrollTrigger);
 /* project data (add your real URLs) */
 const projectsData = [
   {
+    name: "Expense Tracker",
+    tech: ["React", "Node.js", "Express", "MongoDB", "Cloudinary"],
+    description: "A full-stack MERN Expense Tracker that enables users to manage income and expenses, visualize financial trends through interactive charts, securely authenticate with JWT, upload profile images, and export financial data to Excel for analysis.",
+    images: ["/project_screenshots/Dashboard.png", "/project_screenshots/Dashboard.png"],
+    tags: ["Income Tracking", "Expense Tracking", "JWT", "Last 30 Days", "Last 60 Days"],
+    url: "https://expense-tracker-pink-nine.vercel.app/login",
+  },
+  {
     name: "Ride Booking Platform",
     tech: ["React", "Node.js", "Express", "MongoDB", "Microservices"],
     description: "A full-fledged Uber-like ride booking application built with the MERN stack, featuring real-time ride updates with Socket.IO and Google Maps integration for location search and live tracking.",
@@ -262,11 +270,11 @@ const projectsData = [
   },
   {
     name: "Virtual AI Assistant",
-    tech: ["MERN", "Microservices", "Cloudinary", "Google Gemini AI"],
+    tech: ["MERN", "Cloudinary", "Google Gemini AI"],
     description: "An AI-powered virtual assistant built with MERN and Google Gemini AI. It can listen to your voice, respond with speech (US accent), search on Google & YouTube, open apps like Instagram/Facebook, show weather, answer general questions, and more.",
     images: ["/project_screenshots/Virtual-Assistant.png", "/project_screenshots/Virtual-Assistant-2.png"],
     tags: ["AI Integration", "Voice Recognition", "JWT", "Real-time"],
-    url: "https://github.com/Sarg3n7/Virtual-AI-Assistant",
+    url: "https://virtual-ai-assistant-pi.vercel.app/signup",
   },
 ];
 
